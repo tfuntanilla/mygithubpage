@@ -85,7 +85,7 @@ h1 {
 	position: absolute;
   	top: 50px;
   	left: 0;
-  	width: 172px;
+  	width: 168px;
   	-webkit-box-shadow: none;
   	-moz-box-shadow: none;
   	box-shadow: none;
@@ -126,6 +126,7 @@ ul li:hover ul {
 }
 
 body {
+    font: 16px Helvetica;
 	background-color: #FFFFFF;
 }
 
