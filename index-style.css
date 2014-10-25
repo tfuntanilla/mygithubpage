@@ -1,15 +1,44 @@
 h1 {
-	font: 20px Helvetica;
-	font-weight: lighter;
+	font: lighter 20px Helvetica;
 }
 
-a:link  {color:#FFFFFF; background-color:transparent}
-a:visited {color:#FFFFFF; background-color:transparent}
-a:hover   {color:#F0F0F0; background-color:transparent}
-a:active  {color:#FFFFFF; background-color:transparent}
+h2 {
+    font: 20px Helvetica;
+}
+
+h3 {
+    font: bold 24px Helvetica;
+}
+
+
+a:link  {
+    color: #00CCFF; 
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #00CCFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover   {
+    color:#F0F0F0;
+    background-color:transparent;
+    text-decoration: none;
+}
+a:active  {
+    color: #00CCFF;
+    background-color:transparent;
+    text-decoration: none;
+}
+
+.date {
+    font: lighter 12px Helvetica;
+    opacity: 0.5
+}
 
 .header-nav {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -44,7 +73,7 @@ a:active  {color:#FFFFFF; background-color:transparent}
 
 .name-logo {
 	display: inline-block;
-	padding-top: 0;
+	padding-top: 5px;
 	top: 0;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -134,17 +163,24 @@ ul li:hover ul {
 body {
     font: 16px Helvetica;
 	background-color: #FFFFFF;
+	height: 100%
+}
+
+.copyright {
+    color: #999999;
 }
 
 #footer {
-    font: lighter 14px Helvetica;
+    font: lighter 16px Helvetica;
 	position: absolute;
-	bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 0;
 	left: 0;
 	width: 100%;
 	color: #FFFFFF;
-	height: 75px;
-	background-color: #505050 ;	
+	height: 250px;
+	background-color: #505050;	
+	clear: both;
 }
 
 #wrap {
