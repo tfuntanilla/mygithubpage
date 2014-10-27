@@ -22,7 +22,7 @@ a:visited {
     text-decoration: none;
 }
 a:hover   {
-    color:#F0F0F0;
+    color: #C8C6C6;
     background-color:transparent;
     text-decoration: none;
 }
@@ -44,8 +44,8 @@ a:active  {
 	right: 0;
 	width: 100%;
 	color: #FFFFFF;
-	height: 50px;
-	background-color: #505050 ;	
+	height: 200px;
+	background-color: #00CCFF;	
 }
 
 .nav-main {
@@ -64,19 +64,12 @@ a:active  {
   	position: relative;
   	cursor: pointer;
   	float: left;
+    margin: 80px 0;
   	-webkit-transition: all 0.2s;
   	-moz-transition: all 0.2s;
   	-ms-transition: all 0.2s;
   	-o-transition: all 0.2s;
   	transition: all 0.2s;
-}
-
-.name-logo {
-	display: inline-block;
-	padding-top: 5px;
-	top: 0;
-	margin-top: 5px;
-	margin-bottom: 5px;
 }
 
 .name-text {
@@ -85,7 +78,7 @@ a:active  {
   	position: relative;
   	cursor: pointer;
   	float: left;
-  	padding: 10px 20px;
+  	margin: 80px 20px;
   	-webkit-transition: all 0.2s;
   	-moz-transition: all 0.2s;
   	-ms-transition: all 0.2s;
@@ -93,14 +86,14 @@ a:active  {
   	transition: all 0.2s;
 }
 
-
 .nav-home {
-	font: lighter 20px Helvetica;
+	font: lighter 18px Helvetica;
   	display: inline-block;
   	position: relative;
   	height: 20px;
   	cursor: pointer;
-  	padding: 15px 20px;
+  	float: right;
+  	margin: 85px 0px;
   	-webkit-transition: all 0.2s;
   	-moz-transition: all 0.2s;
   	-ms-transition: all 0.2s;
@@ -109,8 +102,7 @@ a:active  {
 }
 
 .nav-home:hover {
-	background: #F0F0F0;
-	color: #505050 ;
+    color: #505050;
 	height: 20px;
 }
 
@@ -156,7 +148,7 @@ ul li:hover ul {
 
 .inner-body {
     font: lighter 18px Helvetica;
-	padding-top: 75px;
+	padding-top: 200px;
 	color: #000000;
 }
 
