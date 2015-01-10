@@ -53,64 +53,34 @@
     <br>
 
     <div class="inner-body" id="wrap">
-        <h3>Keeping gh-pages in sync with the master</h3>
+        <h3>Interviews... interviews... interviews</h3>
         <div class="date">
             01/09/2015
         </div>
-        <p id="gh-pages">
-            I have this website set up through <a href="https://pages.github.com/"target="_blank">GitHub Pages</a>
-            after getting my one year of free .me domain from
-            <a href="https://www.namecheap.com/"target="_blank">Namecheap</a> by
-            being a university student. The initial set up was pretty easy to follow, and the link to GitHub pages has
-            step by step instructions on how to do it. I have mine set up as a Project Site and started
-            everything from scratch, but you can also use one of their pre-built themes. When I was new to this
-            whole thing, I thought you simply had to commit the changes to the master
-            branch and everything will automatically update by itself, but as it turned out, it was a little
-            more involved than that. It's not a very complicated process, but it still took me at least an hour
-            when I first tried to do updates on this website. I googled tutorials and they all pretty much
-            tell you the same instructions, but things wouldn't work out smoothly for me for some reason...
-            Issues happened again when I tried to update this website the second time, and the third time, and
-            pretty much each time except once when everything worked after one commit without any problems.
-            <br><br>
-
-            So on this post, I'm going to keep note of the Git errors and issues I encounter every time I update
-            this website. I'll post about the solutions that worked for me. Generally, updating this website or
-            any GitHub Pages site requires at least the following step by step:
-        <div class="codebox">
-        <p class="code">
-            1. git checkout master // first you have to be in the master branch <br>
-            2. git add . // add all the files to commit <br>
-            3. git status // to see what changes are being committed and make sure there aren't any issues <br>
-            4. git commit -m "Comment about your changes/commit"<br>
-            5. git push origin master // push changes to master<br>
-            6. git checkout gh-pages // now go to the gh-pages branch <br>
-            7. git rebase master // or merge instead of rebase, whichever you prefer;
-            this brings gh-pages up to date with master <br>
-            8. git push origin gh-pages // push changes to the gh-pages branch <br>
-            9. git checkout master // return to the master branch<br>
-        </p>
-        </div>
-
         <p>
-            The git commands above will sync gh-pages branch with the master branch, and if everything worked without
-            merge error or whatever, the site will update after a few minutes. Line 7 is the command that gives me
-            problems, like 95% of the time, and it's the most important command since it's supposed to do the syncing.
-            An example of an issue I get whenever I try to rebase or merge: <br><br>
-            <img src="images/blog/merge-error.jpg"><br><br>
-            I still haven't quite figured out while I get this kind of merge error.
-            When the rebase command fails to do the trick for whatever reason, you can always commit to the
-            gh-pages branch manually:
-        </p>
-        <div class="codebox">
-            <p class="code">
-                1. git checkout gh-pages // make sure you are on the gh-pages branch <br>
-                2. git add . <br>
-                3. git status <br>
-                4. git commit -m 'Comment about your changes/commit' <br>
-                5. git push origin gh-pages <br>
-                6. git checkout master <br>
-            </p>
-        </div>
+            I applied to a couple of companies I'm interested in from October to November 2014. The fastest
+            to reply to me was Google (got a response from a recruiter one business day after I submitted my
+            application). I had my first phone interview with a Google software engineer just before Thanksgiving last
+            year, and it went well so I'm moving on to the next round. Ever since that interview, I've gotten responses
+            from most of the other companies I applied to so I've been doing coding exercises, online technical quizzes,
+            and phone interviews for these companies since late November. I generally like doing the coding exercises
+            since those help me review data structures and algorithms. I've also been asked behavioral questions
+            in some of the first round phone interviews I had, but if you do some preparations beforehand, those aren't
+            really hard to answer. I've never been asked something completely unusual.<br><br>
+
+            So far, I never had problems passing the initial screenings and first round technical interviews. Next
+            week, I have four second/third round technical interviews (all over the phone, one is with Google)
+            in addition to two info sessions (both companies I'm really interested in) and a career fair I have to go to.
+            I'm not even halfway into the interview/hiring process for any of these companies yet, but it's already
+            quite stressful. I've always known that this process takes a really long time for almost all tech companies,
+            which is why I started applying early. They all kind of ask the same types of questions but at the
+            same time they kind of don't, so I still get nervous every time. I still have a bunch of other companies
+            I'd like to talk to at the career fair so assuming they at least find my resume interesting, I'll probably
+            have at least one interview every week for the rest of this quarter.<br><br>
+
+            I'm hoping to secure a job before spring break so hopefully these interviews go well... I'm keeping
+            notes of the interview questions I've been asked so far so I can make posts about them (only those I could
+            legally share, of course) when all of these are over.
 
         </p>
 
