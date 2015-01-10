@@ -18,6 +18,30 @@
         <link rel="stylesheet" type="text/css" href="index-style.css">
         
         <script type="text/javascript" src="script.js"></script>
+        <script>
+            /**
+             * I take a string and create an excerpt from it, returning an object
+             * with the summary and body properties,
+             * @param {Object} str - the string to shorten
+             * @param {Object} limit - the limit of characters
+             */
+            function jps_shortString( str, limit )
+            {
+                var body = new String( str );
+                var summary = new String(str);
+                summary = summary.substr( 0, summary.lastIndexOf( ' ', limit ) ) + '...';
+
+                var returnString = new Object({
+                    body: body,
+                    summary: summary
+                });
+
+                //window.console.log( 'Summary - ' + summary);
+                //window.console.log( 'Body - ' + body);
+
+                return returnString;
+            }
+        </script>
     </head>
 
     <body>
@@ -53,19 +77,19 @@
             <br>
 
             <div class="inner-body" id="wrap">
-                Will be updated soon!
-                
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <h3>Keeping gh-pages in sync with the master</h3>
+                <div class="date">
+                    01/09/2015
+                </div>
+                <p>
+                    <script>
+                        var x = document.getElementById("gh-pages");
+                        jps_shortString(x, 50)
+                    </script>
+                    <a href="github-pages-tutorial.html">Read more</a>
+                </p>
 
-             
+                <hr>
 
             </div>
             
@@ -112,10 +136,10 @@
                         </div>
                         <div style="width: 300px; display: table-cell;">
                             <h2>FIND ME ON</h2>
-                            <a href="https://github.com/trishafuntanilla">GitHub</a>
+                            <a href="https://github.com/trishafuntanilla"target="_blank">GitHub</a>
                             <br>
                             <br>
-                            <a href="https://www.linkedin.com/pub/trisha-marie-funtanilla/99/3a7/417">LinkedIn</a>
+                            <a href="https://www.linkedin.com/pub/trisha-marie-funtanilla/99/3a7/417"target="_blank">LinkedIn</a>
                         </div>
 
                         <div style="width: 300px; display: table-cell;">
