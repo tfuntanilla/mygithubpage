@@ -13,50 +13,55 @@
 
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-    <link rel="shortcut icon" type="image/x-icon" href="images/home/tf-icon-2.png" />
-    <link rel="apple-touch-icon" href="images/home/tf-apple-touch-icon-2.png">
-    <link rel="stylesheet" type="text/css" href="index-style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/home/tf-icon-2.png" />
+    <link rel="apple-touch-icon" href="../images/home/tf-apple-touch-icon-2.png">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="../portfolio/unitrans-datavis/script.js"></script>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "9cc1b5a5-c650-41a2-a117-b5f0cce89a4f",
+        doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 
 <body>
 <div>
-    <div class="header-nav" align="center">
+    <div class="header-nav" align="center"><!-- header start-->
         <div id="wrap">
             <ul role="navigation" class="nav-main">
-                <li class="name-img" onclick="location.href='index.html';"><img src="images/home/logo-thumbnail-2.png">
+                <li class="name-img" onclick="location.href='../index';">
+                    <img src="../images/header/logo-thumbnail-2.png">
                 </li>
-                <li class="name-text" onclick="location.href='index.html';">
+                <li class="name-text" onclick="location.href='../index';">
                     Trisha Funtanilla
                 </li>
 
                 <li class="nav-home" onclick="location.href='#footer';">
                     &nbsp;&nbsp;&nbsp;&nbsp; Contact
                 </li>
-                <li class="nav-home" onclick="location.href='blog.html';">
+                <li class="nav-home" onclick="location.href='../blog';">
                     &nbsp;&nbsp;&nbsp;&nbsp; Blog
                 </li>
-                <li class="nav-home" onclick="location.href='programming.html';">
+                <li class="nav-home" onclick="location.href='../projects';">
                     &nbsp;&nbsp;&nbsp;&nbsp; Projects
                 </li>
-                <li class="nav-home" onclick="location.href='aboutme.html';">
+                <li class="nav-home" onclick="location.href='../aboutme';">
                     &nbsp;&nbsp;&nbsp;&nbsp; About Me
                 </li>
-                <li class="nav-home" onclick="location.href='index.html';">
+                <li class="nav-home" onclick="location.href='../index';">
                     &nbsp;&nbsp;&nbsp;&nbsp; Home
                 </li>
             </ul>
         </div>
-    </div><!-- header-navigation end -->
+    </div><!-- header end -->
 
     <br>
 
-    <div class="inner-body" id="wrap">
+    <div class="inner-body" id="wrap"><!-- inner body start-->
         <h3>Keeping gh-pages in sync with the master</h3>
-        <div class="date">
+        <p class="date">
             01/09/2015
-        </div>
+        </p>
         <p id="gh-pages">
             I have this website set up through <a href="https://pages.github.com/"target="_blank">GitHub Pages</a>
             after getting my one year of free .me domain from
@@ -78,16 +83,16 @@
             any GitHub Pages site requires at least the following step by step:
         <div class="codebox">
         <p class="code">
-            1. git checkout master // first you have to be in the master branch <br>
-            2. git add . // add all the files to commit <br>
-            3. git status // to see what changes are being committed and make sure there aren't any issues <br>
-            4. git commit -m "Comment about your changes/commit"<br>
-            5. git push origin master // push changes to master<br>
-            6. git checkout gh-pages // now go to the gh-pages branch <br>
-            7. git rebase master // or merge instead of rebase, whichever you prefer;
+            1: git checkout master // first you have to be in the master branch <br>
+            2: git add . // add all the files to commit <br>
+            3: git status // to see what changes are being committed and make sure there aren't any issues <br>
+            4: git commit -m "Comment about your changes/commit"<br>
+            5: git push origin master // push changes to master<br>
+            6: git checkout gh-pages // now go to the gh-pages branch <br>
+            7: git rebase master // or merge instead of rebase, whichever you prefer;
             this brings gh-pages up to date with master <br>
-            8. git push origin gh-pages // push changes to the gh-pages branch <br>
-            9. git checkout master // return to the master branch<br>
+            8: git push origin gh-pages // push changes to the gh-pages branch <br>
+            9: git checkout master // return to the master branch<br>
         </p>
         </div>
 
@@ -96,35 +101,31 @@
             merge error or whatever, the site will update after a few minutes. Line 7 is the command that gives me
             problems, like 95% of the time, and it's the most important command since it's supposed to do the syncing.
             An example of an issue I get whenever I try to rebase or merge: <br><br>
-            <img src="images/blog/merge-error.jpg"><br><br>
+            <img src="../images/blog/merge-error.jpg"><br><br>
             I still haven't quite figured out while I get this kind of merge error.
             When the rebase command fails to do the trick for whatever reason, you can always commit to the
             gh-pages branch manually:
         </p>
         <div class="codebox">
             <p class="code">
-                1. git checkout gh-pages // make sure you are on the gh-pages branch <br>
-                2. git add . <br>
-                3. git status <br>
-                4. git commit -m 'Comment about your changes/commit' <br>
-                5. git push origin gh-pages <br>
-                6. git checkout master <br>
+                1: git checkout gh-pages // make sure you are on the gh-pages branch <br>
+                2: git add . <br>
+                3: git status <br>
+                4: git commit -m 'Comment about your changes/commit' <br>
+                5: git push origin gh-pages <br>
+                6: git checkout master <br>
             </p>
         </div>
-
         </p>
 
-    </div>
+        <span class='st_googleplus_large' displayText='Google +'></span>
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_linkedin_large' displayText='LinkedIn'></span>
 
-    <br>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <br>
-    <br>
+    </div><!-- inner body end-->
 
-
+    <br><br><hr><br><br>
 
     <div id="disqus_thread"></div>
     <script type="text/javascript">
@@ -138,49 +139,41 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <noscript>Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-
-    <br>
-    <br>
+    <br><br>
 
     <footer id="footer">
         <div id="wrap" style="display: table;" align="justify">
             <div style="display: table-row">
                 <div style="width: 300px; display: table-cell;">
                     <h2>SITE SECTIONS</h2>
-                    <a href="index.html">Home</a>
-                    <br>
-                    <br>
-                    <a href="aboutme.html">About Me</a>
-                    <br>
-                    <br>
-                    <a href="programming.html">Projects</a>
-                    <br>
-                    <br>
-                    <a href="blog.html">Blog</a>
+                    <a href="../index">Home</a>
+                    <br><br>
+                    <a href="../aboutme">About Me</a>
+                    <br><br>
+                    <a href="../projects">Projects</a>
+                    <br><br>
+                    <a href="../blog">Blog</a>
                 </div>
                 <div style="width: 300px; display: table-cell;">
                     <h2>FIND ME ON</h2>
                     <a href="https://github.com/trishafuntanilla"target="_blank">GitHub</a>
-                    <br>
-                    <br>
-                    <a href="https://www.linkedin.com/pub/trisha-marie-funtanilla/99/3a7/417"target="_blank">LinkedIn</a>
+                    <br><br>
+                    <a href="https://www.linkedin.com/pub/trisha-marie-funtanilla/99/3a7/417"target="_blank">
+                        LinkedIn</a>
                 </div>
-
                 <div style="width: 300px; display: table-cell;">
                     <h2>CONTACT</h2>
                     <a href="mailto:trishafuntanilla@gmail.com" target="_top">Gmail</a>
-                    <br>
-                    <br>
+                    <br><br>
                 </div>
-
             </div>
         </div>
-        <br>
-        <br>
+        <br><br>
         <p class="copyright" id="wrap">
-            &copy; Copyright 2014 by Trisha Marie Funtanilla
+            &copy; Copyright 2014 by Trisha Funtanilla. All rights reserved.
         </p>
     </footer>
 </div>
