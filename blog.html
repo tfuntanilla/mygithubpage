@@ -1,179 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Blog</h1>
+<!-- Navigation -->
+<div class="open">
+    <span class="cls"></span>
+    <span>
+    <ul class="sub-menu ">
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="about-me.html">About Me</a> </li>
+        <li> <a href="#footer">Contact</a> </li>
+        <li> <a href="blog.html">Blog</a> </li>
+    </ul>
+    </span>
+    <span class="cls"></span>
+</div>
 
-        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-        Remove this if you use the .htaccess -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Inits -->
+<script type=text/javascript src="inits.js"></script>
 
-        <title>Blog</title>
-        <meta name="description" content="">
-        <meta name="author" content="Trisha Marie Funtanilla">
+<!-- Main content goes here -->
+<div id="wrap">
+    <div id="inner-body">
+        <!-- Get blog posts and post an excerpt-->
+        <p id="date">03/22/15</p>
+        <h3><a href="blog-posts/new-webpage-design.html">New webpage design!</a></h3>
 
-        <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
-        <link rel="shortcut icon" type="image/x-icon" href="images/home/tf-icon-2.png" />
-        <link rel="apple-touch-icon" href="images/home/tf-apple-touch-icon-2.png">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        
-        <script type="text/javascript" src="projects/unitrans-datavis/script.js"></script>
-        <script>
-            /**
-             * I take a string and create an excerpt from it, returning an object
-             * with the summary and body properties,
-             * @param {Object} str - the string to shorten
-             * @param {Object} limit - the limit of characters
-             */
-            function jps_shortString( str, limit )
-            {
-                var body = new String( str );
-                var summary = new String(str);
-                summary = summary.substr( 0, summary.lastIndexOf( ' ', limit ) ) + '...';
+    </div>
 
-                var returnString = new Object({
-                    body: body,
-                    summary: summary
-                });
+    <!-- Push page contents so footer sticks -->
+    <div id="push"></div>
+</div> <!-- End of main content -->
 
-                //window.console.log( 'Summary - ' + summary);
-                //window.console.log( 'Body - ' + body);
 
-                return returnString;
-            }
-        </script>
-    </head>
 
-    <body>
+<div id="footer">
+    <div id="footer-content" align="center">
         <div>
-            <div class="header-nav" align="center"><!-- header start-->
-                <div id="wrap">
-                    <ul role="navigation" class="nav-main">
-                        <li class="name-img" onclick="location.href='index';">
-                            <img src="images/header/logo-thumbnail-2.png">
-                        </li>
-                        <li class="name-text" onclick="location.href='index';">
-                            Trisha Funtanilla
-                        </li>
-
-                        <li class="nav-home" onclick="location.href='#footer';">
-                            &nbsp;&nbsp;&nbsp;&nbsp; Contact
-                        </li>
-                        <li class="nav-home" onclick="location.href='blog';">
-                            &nbsp;&nbsp;&nbsp;&nbsp; Blog
-                        </li>
-                        <li class="nav-home" onclick="location.href='projects';">
-                            &nbsp;&nbsp;&nbsp;&nbsp; Projects
-                        </li>
-                        <li class="nav-home" onclick="location.href='aboutme';">
-                            &nbsp;&nbsp;&nbsp;&nbsp; About Me
-                        </li>
-                        <li class="nav-home" onclick="location.href='index';">
-                            &nbsp;&nbsp;&nbsp;&nbsp; Home
-                        </li>
-                    </ul>
-                </div>
-            </div><!-- header end -->
-
-            <br>
-
-            <div class="inner-body" id="wrap"><!-- inner body start-->
-                <h3>Image Processing</h3>
-                <p class="date">
-                    01/17/2015
-                </p>
-                <p>
-                    <script>
-                        var x = document.getElementById("gh-pages");
-                        jps_shortString(x, 50)
-                    </script>
-                    It's my second to last quarter in college, and I'm pretty much just finishing up the last couple of
-                    requirements I need to graduate. One of those requirements that I'm taking right now is a team design
-                    project course split in two quarters (started this quarter will continue to spring). It's basically a
-                    capstone course where each project team researches, proposes, implements, and validates a solution to an
-                    open-ended computer science-related...
-                    <br>
-                    <a href="blogs/image-processing">Read more</a>
-                </p>
-
-                <hr>
-
-                <h3>Interviews...</h3>
-                <p class="date">
-                    01/09/2015
-                </p>
-                <p>
-                    <script>
-                        var x = document.getElementById("gh-pages");
-                        jps_shortString(x, 50)
-                    </script>
-                    I applied to a couple of companies I'm interested in from October to November 2014. The fastest
-                    to reply to me was Google (got a response from a recruiter one business day after I submitted my
-                    application). I had my first phone interview with a Google software engineer just before Thanksgiving
-                    last year, and it went well so I'm moving on to the next round. Ever since that interview, I've
-                    gotten responses from most of the other companies I...
-                    <br>
-                    <a href="blogs/interviews">Read more</a>
-                </p>
-
-                <hr>
-
-                <h3>Keeping gh-pages in sync with the master</h3>
-                <p class="date">
-                    01/09/2015
-                </p>
-                <p>
-                    <script>
-                        var x = document.getElementById("gh-pages");
-                        jps_shortString(x, 50)
-                    </script>
-                    I have this website set up through <a href="https://pages.github.com/"target="_blank">GitHub Pages</a>
-                    after getting my one year of free .me domain from
-                    <a href="https://www.namecheap.com/"target="_blank">Namecheap</a> by
-                    being a university student. The initial set up was pretty easy to follow, and the link to GitHub pages has
-                    step by step instructions on how to do it. I have mine set up as a Project Site and started
-                    everything from scratch, but you can also use one of their pre-built themes. When I was new to this
-                    whole thing, I thought you simply had...
-                    <br>
-                    <a href="blogs/github-pages-tutorial">Read more</a>
-                </p>
-                <hr>
-            </div><!-- inner body end-->
-            
-            <br><br><br>
-
-            <footer id="footer">
-                <div id="wrap" style="display: table;" align="justify">
-                    <div style="display: table-row">
-                        <div style="width: 300px; display: table-cell;">
-                            <h2>SITE SECTIONS</h2>
-                            <a href="index">Home</a>
-                            <br><br>
-                            <a href="aboutme">About Me</a>
-                            <br><br>
-                            <a href="projects">Projects</a>
-                            <br><br>
-                            <a href="blog">Blog</a>
-                        </div>
-                        <div style="width: 300px; display: table-cell;">
-                            <h2>FIND ME ON</h2>
-                            <a href="https://github.com/trishafuntanilla"target="_blank">GitHub</a>
-                            <br><br>
-                            <a href="https://www.linkedin.com/pub/trisha-marie-funtanilla/99/3a7/417"target="_blank">
-                                LinkedIn</a>
-                        </div>
-                        <div style="width: 300px; display: table-cell;">
-                            <h2>CONTACT</h2>
-                            <a href="mailto:trishafuntanilla@gmail.com" target="_top">Gmail</a>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-                <p class="copyright" id="wrap">
-                    &copy; Copyright 2014 by Trisha Funtanilla. All rights reserved.
-                </p>
-            </footer>
+            <a href="https://github.com/trishafuntanilla"target="_blank">
+                <img width="32px"; height="32px"; src="images/buttons/GitHub-Mark-64px.png" ></a>
+            <a href="https://www.linkedin.com/pub/trisha-marie-funtanilla/99/3a7/417"target="_blank">
+                <img width="32px"; height="32px"; src="images/buttons/linkedin.png"></a>
+            <a href="mailto:trishafuntanilla@gmail.com" target="_top">
+                <img width="32px"; height="32px"; src="images/buttons/gmail.png"></a>
         </div>
-    </body>
+        <p>
+            &copy; Copyright <script>document.write(new Date().getFullYear())</script>
+            by Trisha Funtanilla. All rights reserved.
+        </p>
+    </div>
+</div>
+
+<!-- Javascript
+   ============================================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/bootstrap/bootstrap.js"></script>
+<script src="assets/js/bootstrap/bootstrap-min.js"></script>
+<script src="assets/js/bootstrap/npm.js"></script>
+<script src="assets/js/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+
+</body>
 </html>
