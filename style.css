@@ -177,10 +177,11 @@ h1 {
 #footer {
     font: lighter 16px SourceSansPro-Light, 'Lato', Arial, Helvetica, sans-serif;
     background-color: rgba(38, 84, 133, 0.54);
+    width: 100%;
 }
 
 #footer-content {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding-top: 20px;
     font: lighter 16px SourceSansPro-Light, 'Lato', Arial, Helvetica, sans-serif;
@@ -234,6 +235,12 @@ hr {
     width: 800px;
     display: block;
 
+}
+
+#header {
+    padding-top: 10px;
+    margin: 0 auto;
+    width:100%;
 }
 
 /******************** BLOG *********************/
