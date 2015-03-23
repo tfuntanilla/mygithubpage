@@ -16,8 +16,12 @@ $(document).ready(function() {
         event.stopPropagation();
     });
 
+    /* Sticky Header */
+    $(window).load(function(){
+        $("#header").sticky({ topSpacing: 0 });
+    });
 
-    /* Owl Carousel */
+     /* Owl Carousel */
     $("#owl-demo").owlCarousel({
 
         navigation : false, // Show next and prev buttons
