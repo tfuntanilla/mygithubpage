@@ -1,17 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Blog</title>
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+
     <link rel="shortcut icon" type="image/x-icon" href="images/index/icons/tf-icon.png" />
     <link rel="apple-touch-icon" href="images/index/icons/tf-apple-touch-icon.png">
+
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/owl-carousel/owl.transitions.css">
 </head>
+
 <body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Inits -->
 <script type=text/javascript src="inits.js"></script>
-<h1>Blog</h1>
+<script src="assets/js/jquery.sticky.js"></script>
+<h1>Projects</h1>
+
 <!-- Navigation -->
 <div class="open">
     <span class="cls"></span>
@@ -30,16 +38,24 @@
 <!-- Main content goes here -->
 <div id="wrap">
     <div id="inner-body">
-        <!-- Get blog posts and post an excerpt-->
-        <p id="date">03/22/15</p>
-        <h3><a href="blog-posts/new-webpage-design.html">New webpage design!</a></h3>
+        <!-- Projects -->
+        <div>
+            <p id="date">03/22/15</p>
+            <h4><a href="portfolio/3dviewer.html">3D Viewer with OpenGL</a></h4>
+            <br>
+            <p id="date">03/22/15</p>
+            <h4><a href="#">Parallel Programming on Various Platforms</a></h4>
+        </div>
+        <!-- End Projects -->
 
+        <!-- Push page contents so footer sticks -->
+        <div id="push"></div>
 
     </div>
 
-    <!-- Push page contents so footer sticks -->
-    <div id="push"></div>
+
 </div> <!-- End of main content -->
+
 
 
 <!-- Begin footer -->

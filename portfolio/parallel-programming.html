@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Blog: New Page!</title>
+    <title>Parallel Programming</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/index/icons/tf-icon.png" />
     <link rel="apple-touch-icon" href="../images/index/icons/tf-apple-touch-icon.png">
     <link rel="stylesheet" type="text/css" href="../style.css">
@@ -17,7 +17,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Inits -->
 <script type=text/javascript src="../inits.js"></script>
-<h1>New webpage design!</h1>
+<h1>Parallel Programming</h1>
 <!-- Navigation -->
 <div class="open">
     <span class="cls"></span>
@@ -36,16 +36,48 @@
 <!-- Main content goes here -->
 <div id="wrap">
     <div id="inner-body">
-        <p id="date">03/22/15</p>
+        <p id="date">03/24/15</p>
         <br>
         <p id="blog-post">
-            Revamped the site! I will be posting my projects back soon.<br><br>
-            Credits to the following resources: <br>
-            <a href="http://www.jqueryscript.net/menu/Creative-Morphing-Menu-with-jQuery-CSS3.html">
-                Creative Morphing Menu</a><br>
-            <a href="http://owlgraphic.com/owlcarousel/index.html">OWL Carousel</a><br>
-            <a href="http://martz90.deviantart.com/art/Circle-Icons-Pack-371172325">Circle Icons Pack</a>
-
+            Just last winter quarter, I learned parallel programming, and I really like how much better of a programmer
+            I became because of it. I'm now able to code really fast programs using
+            <a href="http://openmp.org/wp/">OpenMP</a>,
+            <a href="http://cran.r-project.org/web/packages/snow/index.html">R Snow</a>,
+            <a href="https://developer.nvidia.com/about-cuda">CUDA</a>, and
+            <a href="http://docs.nvidia.com/cuda/thrust/#axzz3VNHXr11r">Thrust</a>. As someone who really loves to
+            program, it makes me really
+            happy.
+            <br><br>
+            For our final project, I worked with three of my peers in parallelizing the
+            combn() function from the R CRAN package <a href="http://cran.r-project.org/web/packages/combinat/index.html">
+            'combinat'</a>. This function is pretty straightforward. As per its official documentation, the combn()
+            function: "Generate all combinations of the elements of x taken m at a time." Click
+            <a href="http://cran.r-project.org/web/packages/combinat/combinat.pdf">here</a> for a more detailed
+            description.
+            <br><br>
+            The goal of the project is to write a new version of the function that works exactly like the original
+            version (handles the same types of inputs, produces the same results for same inputs, etc.),
+            except the new one is parallelized using OpenMP, R Snow, CUDA, and/or Thrust (we choose three, R Snow
+            is required). Even though the combn() function seems straightforward, this project was quite challenging
+            because we had to think of ways that doesn't simply parallelize the implementation, but actually makes
+            the program run faster. It's quite easy to convert the original code into a parallelize version,
+            but it's another thing to actually make considerable speed improvements. There are many factors to consider
+            depending on the platform being used, such as arranging good cache behavior, managing shared memory usage,
+            etc. Another challenging was aspect was handling the input and output for the function.
+            The codes for OpenMP, CUDA, and Thrust need to be written with C++, and going from handling
+            R data types to C++ data types definitely involved quite some work.
+            <br><br>
+            It was a challenging project, but overall I was very happy with the speed improvements that my grouped
+            achieved, except for our R Snow implementation, which for a reason I haven't figured out, achieved the
+            exact opposite of our goal. The following charts show the improvements in speeds for inputs up to millions in
+            size. I'm hastily making this post right now so I can update this site before I get super busy again, but
+            I also plan to share the approaches that we took to make the program run faster (in OpenMP and Thrust, at
+            least).
+            <br><br>
+            <img src="../images/blog-posts/parallelprog.png" width = 375>&nbsp;
+            <img src="../images/blog-posts/withoutsnow.png" width="375">
+            <br><br>
+            Source: Available on <a href="https://github.com/trishafuntanilla/comb-parallel">GitHub</a>
         </p>
 
         <br><br>
