@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Blog: New Page!</title>
+    <title>3D Viewer</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/index/icons/tf-icon.png" />
     <link rel="apple-touch-icon" href="../images/index/icons/tf-apple-touch-icon.png">
     <link rel="stylesheet" type="text/css" href="../style.css">
@@ -17,7 +17,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Inits -->
 <script type=text/javascript src="../inits.js"></script>
-<h1>New webpage design!</h1>
+<h1>3D Viewer with OpenGL</h1>
 <!-- Navigation -->
 <div class="open">
     <span class="cls"></span>
@@ -36,16 +36,32 @@
 <!-- Main content goes here -->
 <div id="wrap">
     <div id="inner-body">
-        <p id="date">03/22/15</p>
+        <p id="date">03/23/15</p>
         <br>
         <p id="blog-post">
-            Revamped the site! I will be posting my projects back soon.<br><br>
-            Credits to the following resources: <br>
-            <a href="http://www.jqueryscript.net/menu/Creative-Morphing-Menu-with-jQuery-CSS3.html">
-                Creative Morphing Menu</a><br>
-            <a href="http://owlgraphic.com/owlcarousel/index.html">OWL Carousel</a><br>
-            <a href="http://martz90.deviantart.com/art/Circle-Icons-Pack-371172325">Circle Icons Pack</a>
-
+            <img src="../images/blog-posts/3dviewer-program.png" width="800px" height="594px"><br><br>
+            This is a project I completed for my computer graphics class last Fall Quarter 2014. This is probably
+            the most time-consuming class I've ever taken, but I ended up really liking it, and I got an A in the class,
+            so the time and effort was definitely worth it.
+            <br><br>
+            It's a desktop program that allows users to create a 3D scene that they can manipulate or navigate into.
+            The scene models/objects can be loaded from an .obj or a JSON file, and the program renders the objects.
+            The user can then transform each individual object (translate, rotate, or scale), manipulate the lighting
+            and the type of shading (flat, Gouraud, or Phong) of the scene, and add textures for a more realistic
+            rendering. It also allows the user to save a scene in JSON format, so it can be loaded at a later time.
+            <br><br>
+            Through this project, I also learned the graphics pipeline and even implemented it in the actual program.
+            That part was definitely the most challenging aspect since it was basically implementing the same pipeline
+            OpenGL uses to render 3D objects. The most fun part for me is implementing the lighting and textures.
+            That was when the program got really interesting for me since I actually got to render scenes that look
+            somewhat realistic.
+            <br><br>
+            Few parts in my implementation are not fully correct, so I plan to work on those when I have the time. I
+            also plan to fix the UI since I don't quite like it right now and maybe add more advanced computer graphics
+            concepts.
+            <br><br>
+            Tools used: OpenGL, C++, and Qt <br>
+            Source: Available on <a href="https://github.com/trishafuntanilla/graphics175">GitHub</a>
         </p>
 
         <br><br>
