@@ -3,74 +3,200 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Blog</title>
+
     <link rel="shortcut icon" type="image/x-icon" href="images/index/icons/tf-icon.png" />
     <link rel="apple-touch-icon" href="images/index/icons/tf-apple-touch-icon.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Image Gallery -->
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-image-gallery.min.css">
+
+    <!-- Main Styleshhet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Sharing -->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "9cc1b5a5-c650-41a2-a117-b5f0cce89a4f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
+
 <body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- Inits -->
-<script type=text/javascript src="inits.js"></script>
-<h1>Blog</h1>
+
+<!-- Header -->
+<div id="header"><h1>Blog</h1></div>
+<!-- End Header -->
+
 <!-- Navigation -->
 <div class="open">
     <span class="cls"></span>
     <span>
     <ul class="sub-menu ">
         <li> <a href="index.html">Home</a> </li>
-        <li> <a href="about-me.html">About Me</a> </li>
+        <li> <a href="index.html#about-me">About Me</a></li>
         <li> <a href="#footer">Contact</a> </li>
-        <li> <a href="portfolio.html"> Portfolio </a> </li>
         <li> <a href="blog.html">Blog</a> </li>
     </ul>
     </span>
     <span class="cls"></span>
 </div>
+<!-- End Navigation -->
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bootstrap Image Gallery -->
 
 <!-- Main content goes here -->
 <div id="wrap">
-    <div id="inner-body">
-        <!-- Get blog posts and post an excerpt-->
-        <p id="date">03/22/15</p>
-        <h3><a href="blog-posts/new-webpage-design.html">New webpage design!</a></h3>
+        <div id="blog-posts-list">
+            <div id="blog-posts-list-content">
+                <h3 id="beach">Summer 2015</h3>
+                <p id="date">7/6/2015</p>
+                <p id="blog-post">
+                    I spent the last week of June in Big Island, HI, and that would most likely be my last vacation trip
+                    for this year's summer. Next week, I'll be starting my first post-college job. While I'm already
+                    used to the idea of working 40 hours a week during summertime (I spent my last
+                    two summers working full-time), I still feel like I'm going to greatly miss school downtime.
+                    I'll still have vacation days, but they're not like school breaks. I'll have to carefully plan how
+                    I'll be using my limited time off throughout the year. Knowing well in advance the exact start
+                    and end dates of my winter, spring, and summer breaks actually made planning vacation trips easier.
+                    <br><br>
+                    Anyway, I thought I'd share pictures of some of the beautiful spots I visited while I was in the
+                    Big Island. I like traveling and beaches. I thoroughly enjoyed the warm waters
+                    and the big waves - Hawaii just became one of my favorite U.S. states for this reason.
+                    Hopefully, I can visit Honolulu and Maui next time.
+                    <br><br>
+                    <!-- Image Gallery -->
+                    <div id="links" align="center">
+                        <a href="images/gallery/hapuna_beach_0.jpg" title="Hapuna Beach" data-gallery>
+                            <img width="150px" src="images/gallery/hapuna_beach_0.jpg" alt="Hapuna Beach">
+                        </a>
+                        <a href="images/gallery/manini'owali_beach_0.jpg" title="Manini'Owali Beach" data-gallery>
+                            <img width="150px" src="images/gallery/manini'owali_beach_0.jpg" alt="Manini'Owali Beach">
+                        </a>
+                        <a href="images/gallery/lapakahi_park_0.jpg" title="Lapakahi State Historical Park" data-gallery>
+                            <img width="150px" src="images/gallery/lapakahi_park_0.jpg" alt="Lapakahi State Historical Park">
+                        </a>
+                        <a href="images/gallery/kahaluu_keauhou_0.jpg" title="Kahalu`u Beach Park" data-gallery>
+                            <img width="150px" src="images/gallery/kahaluu_keauhou_0.jpg" alt="Kahalu`u Beach Park">
+                        </a>
+                    </div>
+                     <!-- Image Gallery -->
+                    <br>
+                    <span class='st_facebook'></span>
+                    <span class='st_twitter'></span>
+                    <span class='st_googleplus'></span>
+                    <span class='st_linkedin'></span>
+                </p>
 
+                <br><hr><br><br>
 
-    </div>
+                <h3 id="update">Website design update</h3>
+                <p id="date">7/3/2015</p>
+                <p id="blog-post">
+                    Credits to the following resources:
+                <ul style="padding-left: 50px;">
+                    <li><a href="http://www.jqueryscript.net/menu/Creative-Morphing-Menu-with-jQuery-CSS3.html">
+                        Creative Morphing Menu</a></li>
+                    <li><a href="http://gauravtiwari.org/portfolio/full-moon-social-bookmarking-icons/">Full Moon Social Icon Set</a></li>
+                </ul>
+                <br>
+                <span class='st_facebook'></span>
+                <span class='st_twitter'></span>
+                <span class='st_googleplus'></span>
+                <span class='st_linkedin'></span>
+                </p>
+
+                <br><hr><br><br>
+
+            </div>
+        </div>
 
     <!-- Push page contents so footer sticks -->
     <div id="push"></div>
 </div> <!-- End of main content -->
-
 
 <!-- Begin footer -->
 <div id="footer">
     <div id="footer-content" align="center">
         <div>
             <a href="https://github.com/trishafuntanilla"target="_blank">
-                <img width="32px"; height="32px"; src="images/buttons/GitHub-Mark-64px.png" ></a>
+                <img width="48px"; height="48px"; src="images/buttons/github2.png"
+                     onmouseover="this.src='images/buttons/github2-hover.png';"
+                     onmouseout="this.src='images/buttons/github2.png';"></a>
             &nbsp;&nbsp;
             <a href="https://www.linkedin.com/in/trishafuntanilla"target="_blank">
-                <img width="32px"; height="32px"; src="images/buttons/linkedin.png"></a>
+                <img width="48px"; height="48px"; src="images/buttons/linkedin2.png"
+                     onmouseover="this.src='images/buttons/linkedin2-hover.png';"
+                     onmouseout="this.src='images/buttons/linkedin2.png';"></a>
             &nbsp;&nbsp;
             <a href="mailto:trishafuntanilla@gmail.com" target="_top">
-                <img width="32px"; height="32px"; src="images/buttons/gmail.png"></a>
-        </div><br>
-        <p style="font-size: 12px; color: #000;">
+                <img width="48px"; height="48px"; src="images/buttons/gmail2.png"
+                     onmouseover="this.src='images/buttons/gmail2-hover.png';"
+                     onmouseout="this.src='images/buttons/gmail2.png';"></a>
+        </div>
+        <br>
+        <p style="font-size: 12px; color: #265485;">
             &copy; Copyright <script>document.write(new Date().getFullYear())</script>
-            by Trisha Funtanilla. All rights reserved.
+            by Trisha Funtanilla.
         </p>
     </div>
 </div>
 <!-- End footer -->
 
-<!-- Javascript
-   ============================================================ -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="assets/js/bootstrap/bootstrap.js"></script>
-<script src="assets/js/bootstrap/bootstrap-min.js"></script>
-<script src="assets/js/bootstrap/npm.js"></script>
-<script src="assets/js/owl-carousel/owl.carousel.js"></script>
-<script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+<!-- Javascript -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap-image-gallery.min.js"></script>
+<script type=text/javascript src="assets/js/inits.js"></script>
+<script type=text/javascript src="assets/js/jquery.sticky.js"></script>
+<script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+</script>
+
+<!-- End Javascript -->
 
 </body>
 </html>
